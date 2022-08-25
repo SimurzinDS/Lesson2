@@ -5,9 +5,13 @@
 // 918 -> 1
 
 
-int returnSecondNumber(int number)
+int returnSecondNumber(int arg)
 {
-    int result = ((number % 100) / 10);
+    int result = ((arg % 100) / 10);
+    if (result < 0)
+    {
+        result = result * -1;
+    }
     return result;
 }
 
