@@ -17,16 +17,16 @@ int? thirdNumber(int arg)
     else
     {
       int result = arg;          // присваиваем аргумент переменной reuslt
-      if(result < 0)             // Проверям если 
+      if(result < 0)             // Тут проверяем что если ввели отрицательное число
       {
-        result = result * -1;
+        result = result * -1;    // То умножаем на -1 чтобы избавиться от знака минус
       }
-      while (result > 1000)
+      while (result > 1000)      // Тут проверяем пока число больше 4х знаком то выполняем условие
       {
-        result = result / 10;
+        result = result / 10;    // Делим число на 10, пока оно не станет 3х значное
       }
-      result = result % 10;
-      return result;
+      result = result % 10;      // берем остаток от деления 3х значного числа
+      return result;             // возвращаем result
     }
 }
 
