@@ -35,11 +35,11 @@ var input = Convert.ToInt32(Console.ReadLine());
 
 var number = thirdNumber(input);
 
-if(number == null)
+if (number == null)
 {
-Console.WriteLine("третьей цифры нет");
+    Console.WriteLine("третьей цифры нет");
 }
 else
 {
-Console.WriteLine(number);
+    Console.WriteLine(number);
 }
