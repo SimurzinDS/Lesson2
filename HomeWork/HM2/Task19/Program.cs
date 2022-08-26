@@ -3,7 +3,7 @@ string? number = Console.ReadLine();
 
 string CheckingNumber(string number)
 {
-    if (number[0] == number[4] || number[1] == number[3])
+    if (number[0] == number[4] && number[1] == number[3])
     {
         return $"Ваше число: {number} - палиндром.";
     }
